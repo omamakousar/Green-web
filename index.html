@@ -1,0 +1,135 @@
+<htm>
+  <head>
+    <title>My portfolio</title>
+    <style>
+      body{
+      background-image:url("Pin.jpeg");
+      background-attachment:fixed;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+      margin:0;
+      padding:20px;
+      transform:none;
+      }
+    
+    
+      h1{
+        color:green;
+        font-weight:bold;
+        font-size:100px;
+      }
+      h2{
+        color:white;
+        font-size:80px;
+      }
+      button{
+    background-color:darkgreen;
+    color:white;
+    border:none;
+    border-radius:30px;
+    padding:50px 80px;
+    font-size:50px;
+    font-weight:bold;
+    cursor:pointer;
+      }
+      
+      
+      
+      slider{
+    position:relative;
+    width:100%;
+    max-width:90px;
+    height:100px;
+    margin:auto;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    animation:carousel 15s infinite;
+}
+
+.slide:nth-child(1){animation-delay:0s;}
+.slide:nth-child(2){animation-delay:3s;}
+.slide:nth-child(3){animation-delay:6s;}
+.slide:nth-child(4){animation-delay:9s;}
+.slide:nth-child(5){animation-delay:12s;}
+
+@keyframes carousel{
+    0%{
+        left:15%;
+        transform:scale(1);
+        opacity:1;
+        z-index:3;
+    }
+    25%{
+        left:55%;
+        transform:scale(0.8);
+        opacity:0.6;
+    }
+    50%{
+        left:85%;
+        transform:scale(0.6);
+    }
+    75%{
+        left:-25%;
+        transform:scale(0.6);
+    }
+    100%{
+        left:15%;
+        transform:scale(1);
+        opacity:1;
+        z-index:3;
+    }
+      }
+nav{
+    background-color:white;
+    padding:15px 20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:40px;
+    font-weight:bold;
+    margin-right:20px;
+}
+logo{
+  width:60px;
+  height:auto;
+}
+      
+    </style>
+  </head>
+  <body>
+     <nav>
+  <img src="Web.png" alt="Logo" width="300">
+       <a href="index.html">Home</a>
+       <a href="about us.html">About us</a>
+       <a href="Contact.html">Contact</a> 
+  </nav>
+  <h1>Building the web, one line of code at a time.</h1>
+  <h2>I am Omama, a student<br> web developer specializing in front-end technologies like HTML5, CSS3, and JavaScript.<br> I focus on creating fast, user-friendly portfolio websites.<br> Let's collaborate on your next project!</h2>
+  <a href="Projects.html">
+  <button>
+    view projects
+  </button>
+  </a>
+    <br><br><br><br><br>
+
+<div class="slider">
+    <img src="Img1.jpeg" class="slide">
+    <img src="Img2.jpeg" class="slide">
+    <img src="Img3.jpeg" class="slide">
+    <img src="Img4.jpeg" class="slide">
+    <img src="Img5.jpeg" class="slide">
+</div>
+
+</body>
+</html>
